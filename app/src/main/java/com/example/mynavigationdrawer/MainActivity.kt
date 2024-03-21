@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         // ini merupakan proses otomatis perpindahan fragment tanpa perlu memanggilnya satu persatu dengan menyamakan namanya pada menu juga navigation
         appBarConfiguration = AppBarConfiguration( // dia menangkap id-id pada navigation drawer (menu dan navigation), jika isinya kosong maka akan menampilkan panah kembali
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_subway, R.id.nav_cart // untuk perpindahan fragment dari id" tsb
+                 R.id.nav_gallery, R.id.nav_home, R.id.nav_slideshow, R.id.nav_subway, R.id.nav_cart // untuk perpindahan fragment dari id" tsb
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration) // untuk mengatur judul-judul navigasi
@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
